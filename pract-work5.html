@@ -1,0 +1,92 @@
+<!doctype html>  <!--Анастасія Волевач Практика №5 — Створення простої форми-->
+
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Форма звороного зв'язку</title>
+        <meta name="vievport" content="width=devise-width", initial-scale="1", shrink-to-fit="no", minmal="ui">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles5.css" >
+    </head>
+
+    <body>
+
+        <div class="layout-container">
+            <h1>Форма зворотного зв’язку</h1>
+        
+            <form class="form">
+
+                <div class="field required">
+                    <label for="field-name">Ваше ім’я</label>
+                    <input type="text" id="field-name" placeholder="Введіть ім’я в форматі Іван Франко" class="control icon-name" required>
+                </div>
+
+                <div class="field required">
+                    <label for="field-email">Ваш E-Mail</label>
+                    <input type="email" id="field-email" class="control icon-email" required>
+                </div>
+
+                <div class="field error required">
+                    <label for="field-phone">Ваш телефон</label>
+                    <input type="tel" id="field-phone" class="control icon-phone" required>
+                </div>
+
+                <div class="field required">
+                    <label for="field-phone-err">Ваш телефон</label>
+                    <input type="tel" id="field-phone-err" class="control icon-phone" required>
+                </div>
+                <p class="error-message"> 
+                    Дане поле заповнене неправильно. <br>
+                    Тут на одну цифру більше ніж треба 
+                </p>
+
+                <div class="field">
+                    <label>Ваш регіон</label>
+
+                    <label class="radio">
+                        <input type="radio" name="region" value="ukraine">
+                        Україна
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="region" value="poland">
+                        Польща
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label for="field-city">Ваше місто</label>
+                    <select id="field-sity" class="control">
+                        <option value="" selected>Оберіть зі списку</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="kharkiv">Харків</option>
+                        <option value="odesa">Одеса</option>
+                        <option value="donetsk">Донецьк</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="field-comment">Довгий текст</label>
+                    <textarea id="field-comment" rows="4" class="control" placeholder=" Тут можна написати ваш відгук"> </textarea>
+                </div>
+
+                <div class="field no-label">
+                    <label>
+                        <input type="checkbox" name="tos-agree" value="1">
+                        Погоджуюсь з умовами платформи
+                    </label>
+                </div>
+
+                <footer class="form-actions">
+                    <bottom type="reset" class="btm-reset">Скинути</bottom>
+                    <bottom type="submit" class="btm-submit">Готово</bottom>
+                </footer>
+
+            </form>
+        </div>
+ 
+
+    </body>
+
+</html>
